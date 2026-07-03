@@ -1,0 +1,11 @@
+query_id,query,expected_category,expected_doc_id
+Q-001,How long do I have to return an unused item?,refunds_returns,KB-REF-001
+Q-002,When will my refund appear in my bank account?,refunds_returns,KB-REF-001
+Q-003,Can I change my delivery address after shipment?,shipping_delivery,KB-SHP-001
+Q-004,My package has not moved for two days. What should I do?,order_tracking,KB-TRK-001
+Q-005,Can I cancel an order that is still processing?,order_cancellation,KB-CAN-001
+Q-006,Why do I see two charges for one order?,payments_billing,KB-PAY-001
+Q-007,I did not receive the password reset email.,account_password,KB-ACC-001
+Q-008,The product arrived damaged. What information do you need?,damaged_missing_items,KB-DMG-001
+Q-009,The tracking page says delivered but I cannot find the package.,damaged_missing_items,KB-DMG-001
+Q-010,I want to speak with a human agent.,support_escalation,KB-ESC-001

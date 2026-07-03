@@ -1,0 +1,14 @@
+datasets
+loguru
+pydantic>=2.0,<3.0
+pyspark==4.0.1
+delta-spark==4.0.0
+great_expectations==0.18.21
+chromadb
+sentence-transformers
+rank-bm25
+transformers
+sentencepiece
+confluent-kafka
+openlineage-python
+groq

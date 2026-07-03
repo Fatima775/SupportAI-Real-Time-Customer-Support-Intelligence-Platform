@@ -1,0 +1,9 @@
+doc_id,filename,title,category,version,effective_date,company,language
+KB-REF-001,refunds_and_returns.md,Refunds and Returns Policy,refunds_returns,1.0,2026-07-01,NovaStore,English
+KB-SHP-001,shipping_and_delivery.md,Shipping and Delivery Policy,shipping_delivery,1.0,2026-07-01,NovaStore,English
+KB-CAN-001,order_cancellation.md,Order Cancellation Policy,order_cancellation,1.0,2026-07-01,NovaStore,English
+KB-PAY-001,payments_and_billing.md,Payments and Billing Policy,payments_billing,1.0,2026-07-01,NovaStore,English
+KB-ACC-001,account_and_password.md,Account Access and Password Recovery,account_password,1.0,2026-07-01,NovaStore,English
+KB-DMG-001,damaged_or_missing_items.md,"Damaged, Incorrect, or Missing Items Policy",damaged_missing_items,1.0,2026-07-01,NovaStore,English
+KB-TRK-001,order_tracking.md,Order Tracking and Status Guide,order_tracking,1.0,2026-07-01,NovaStore,English
+KB-ESC-001,support_escalation.md,Customer Support Escalation and Response Policy,support_escalation,1.0,2026-07-01,NovaStore,English

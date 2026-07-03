@@ -1,0 +1,18 @@
+{
+  "notebook": "SupportAI_Final_Project.ipynb",
+  "notebook_modified": false,
+  "knowledge_base_files": [
+    "README.md",
+    "account_and_password.md",
+    "damaged_or_missing_items.md",
+    "kb_chunks.jsonl",
+    "metadata.csv",
+    "order_cancellation.md",
+    "order_tracking.md",
+    "payments_and_billing.md",
+    "refunds_and_returns.md",
+    "shipping_and_delivery.md",
+    "support_escalation.md",
+    "test_queries.csv"
+  ]
+}
