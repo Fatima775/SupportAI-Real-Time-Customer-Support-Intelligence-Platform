@@ -405,7 +405,7 @@ Delta Lake successfully rejects the invalid append, preventing schema drift and 
 
 The project demonstrates how an existing ticket can be updated while unseen tickets are inserted.
 
-
+```text
 Existing ticket_id → UPDATE
 New ticket_id      → INSERT
 ```
@@ -444,7 +444,7 @@ Llama Response through Groq
 
 The project uses:
 
-
+```text
 sentence-transformers/all-MiniLM-L6-v2
 ```
 
@@ -603,7 +603,7 @@ The project generates an executable Apache Airflow DAG.
 
 The workflow includes:
 
-
+```text
 Prepare Source Data
         ↓
 Kafka Ingestion
@@ -663,7 +663,7 @@ Run the installation cell included at the beginning of the notebook.
 
 The main dependencies are:
 
-
+```text
 datasets
 loguru
 pydantic
@@ -682,7 +682,7 @@ groq
 
 The dependency list is also available in:
 
-
+```text
 requirements-colab.txt
 ```
 
@@ -755,13 +755,13 @@ The results show that the expected policy document appeared in the first result 
 
 ### Customer Question
 
-
+```text
 I received a damaged product. What information do you need from me?
 ```
 
 ### Retrieval Process
 
-
+```text
 Vector search candidates : 10
 BM25 search candidates   : 10
 RRF fused candidates     : 8
@@ -777,7 +777,7 @@ The pipeline retrieves evidence from:
 
 ### Generated Grounded Answer
 
-
+```text
 To process your damaged product claim, please provide:
 
 - Your order number
@@ -897,11 +897,12 @@ Deep Learning, Large Language Models, RAG, and Data Engineering
 
 GitHub: [Fatima775](https://github.com/Fatima775)
 
-
+---
 
 ## Project Status
 
-
+```text
 Completed — Final Capstone Project
+```
 
 This project is intended for educational, portfolio, and research-demonstration purposes.
