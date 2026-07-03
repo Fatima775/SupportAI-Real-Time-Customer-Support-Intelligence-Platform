@@ -1,17 +1,13 @@
 # SupportAI — Real-Time Intelligent Customer Support Platform
 
-SupportAI is an end-to-end customer-support intelligence project combining modern
-data engineering, data-quality validation, hybrid retrieval, reranking, and
-grounded Llama generation through Groq.
+SupportAI is an end-to-end customer-support intelligence platform that integrates modern data engineering, data-quality validation, hybrid retrieval, reranking, and grounded response generation using Llama through Groq.
 
 ## Repository Structure
-
-```text
 SupportAI-Final-Project/
 ├── SupportAI_Final_Project.ipynb
 ├── README.md
 ├── requirements-colab.txt
-├── .gitignore
+├── PROJECT_MANIFEST.json
 └── knowledge_base/
     ├── README.md
     ├── metadata.csv
@@ -30,90 +26,58 @@ SupportAI-Final-Project/
 ## Main Architecture
 
 ```text
-Customer-support events
+Customer Support Events
         ↓
-Streaming ingestion
+Streaming Ingestion
         ↓
 Bronze / Silver / Gold Lakehouse
         ↓
-Data-quality checks
+Data-Quality Validation
         ↓
 NovaStore Knowledge Base
         ↓
-ChromaDB semantic retrieval + BM25 keyword retrieval
+ChromaDB Semantic Retrieval + BM25 Keyword Retrieval
         ↓
 Reciprocal Rank Fusion
         ↓
-Cross-encoder reranking
+Cross-Encoder Reranking
         ↓
-Llama grounded answer through Groq
+Grounded Llama Response through Groq
 ```
 
-## Components
+## Main Components
 
-- Streaming-style event ingestion
-- Bronze, Silver, and Gold data layers
+- Streaming-style customer-support event ingestion
+- Bronze, Silver, and Gold Lakehouse layers
 - Data-quality validation
 - Persistent ChromaDB vector index
 - BM25 sparse retrieval
 - Reciprocal Rank Fusion
 - Cross-encoder reranking
-- Grounded answer generation with Llama through Groq
-- Source-aware fallback response
-- Lineage and project artifacts
+- Grounded answer generation using Llama through Groq
+- Source-aware fallback responses
+- Data-lineage and project artifacts
 
 ## Run in Google Colab
 
 1. Open `SupportAI_Final_Project.ipynb` in Google Colab.
 2. Connect to a fresh runtime.
-3. Run the notebook's installation cell.
-4. When installation completes, restart the session once if the notebook requests it.
+3. Run the notebook installation cell.
+4. Restart the session once if requested.
 5. Run the remaining cells from top to bottom.
-6. Do not skip configuration or Knowledge Base cells before running the RAG section.
+6. Do not skip the configuration or Knowledge Base cells before running the RAG section.
 
-## Groq Secret
+## Groq Configuration
 
-In Google Colab, open **Secrets** and add:
+Add the following secret in Google Colab:
 
 ```text
 Name: GROQ_API_KEY
 Value: your Groq API key
 ```
 
-Enable **Notebook access**.
+Enable **Notebook access** before running the Llama generation cells.
 
-Never commit the API key to GitHub or paste it directly into the notebook.
+## Technologies
 
-## Knowledge Base
-
-The `knowledge_base/` directory contains the NovaStore support-policy documents
-used by the retrieval pipeline. It includes policy documents, metadata, prepared
-chunks, and test questions.
-
-The notebook may also build or copy working artifacts during execution. Those
-generated runtime files do not need to be committed unless required for submission.
-
-## GitHub Upload
-
-Upload the contents of the `SupportAI-Final-Project` folder, not only the ZIP file.
-
-The repository root should show:
-
-```text
-SupportAI_Final_Project.ipynb
-README.md
-requirements-colab.txt
-knowledge_base/
-```
-
-## Security
-
-- Do not upload `GROQ_API_KEY`.
-- Do not upload `.env` files.
-- Do not upload generated Chroma databases or large runtime data unless required.
-- Colab Secrets are not stored inside this repository.
-
-## Notebook Integrity
-
-`SupportAI_Final_Project.ipynb` is copied exactly from the user-provided notebook.
-No notebook cells were modified while creating this package.
+Python, PySpark, Delta Lake, Great Expectations, ChromaDB, Sentence Transformers, BM25, Reciprocal Rank Fusion, Cross-Encoder Reranking, Groq, and Llama.
