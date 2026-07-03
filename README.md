@@ -1,4 +1,4 @@
-# SupportAI — Real-Time Intelligent Customer Support Platform
+# SupportAI-Real-Time Intelligent Customer Support Platform
 
 SupportAI is an end-to-end customer-support intelligence platform that integrates modern data engineering, data-quality validation, hybrid retrieval, reranking, and grounded response generation using Llama through Groq.
 
